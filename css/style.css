@@ -1,0 +1,222 @@
+html {
+  font-size: 0.6rem;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Poppins', sans-serif;
+	overflow: hidden;
+}
+main{
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+.header{
+	height: 10vh;
+}
+.main-nav{
+	background-color: #2f8be0;}
+.navbar{
+	width: 90%;
+	margin: auto;
+}
+.nav-link{
+	color: white;
+}
+.nav-link:hover{
+	color: black;
+	transition: 0.8s ease;
+}
+@keyframes navlinkshover{
+	0%{
+		opacity: 0;
+		transform: translateX(-20px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+
+
+
+.presentation{
+	min-height: 90vh;
+	width: 90%;
+	margin: auto;
+}
+.introduction,.image{
+	flex: 1;
+}
+.introduction{
+	margin-bottom: 20px;
+}
+.buttons a{
+	padding: 12px 27px 12px 27px;
+	text-decoration: none;
+}
+.see-more{
+	background-color: none;
+	border: 2px solid #4287f5;
+	color: #4287f5;
+}
+.contact-a{
+	background-color: #4287f5;
+	border: 2px solid #4287f5;
+	color: white;
+}
+.see-more:hover{
+	background-color: #4287f5;
+	border: 2px solid #4287f5;
+	color: white;
+	transition: 0.8s ease;
+}
+.contact-a:hover{
+	background-color: white;
+	border: 2px solid #4287f5;
+	color: #4287f5;
+	transition: 0.8s ease;
+}
+.image img{
+	height: 60vh;
+	animation: photoanimation 1.2s ease;
+	filter: drop-shadow(3px 0px 3px black);
+}
+@keyframes photoanimation{
+	0%{
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+
+	100%{
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+
+
+
+
+.about{
+	height: 100vh;
+	background-color: #4287f5;
+}
+.about-presentation{
+	width: 90%;
+}
+.about-infos p{
+	line-height: 2;
+}
+
+
+/* SKILL SECTION STYE */
+.skills-content{
+	width: 90%;
+}
+.skill-span{
+	border-bottom: 2px solid #4287f5;
+	letter-spacing: 5px;
+}
+
+.front-end,.back-end{
+	flex: 1;
+}
+.skill{
+	width: 100%;
+	background-color: #e6efff;
+}
+.skill-progress{
+	background-color: #4287f5;
+	padding: 10px;
+}
+.html,.css,.bs4{
+	width: 80%;
+}
+.js,.php{
+	width: 65%;
+}
+.laravel,.csharp,.mysql{
+	width: 55%;
+}
+.vue-js,.mvcoop{
+	width: 40%;
+}
+/* SKILL SECTION STYE */
+
+
+
+/* CONTACT	 SECTION STYE */
+.contact{
+	height: 50vh;
+	background-color: #4287f5;
+}
+.contact a:hover{
+	animation: sociallinks 0.8s ease;
+}
+.contact-info{
+	letter-spacing: 5px;
+}
+/* CONTACT	 SECTION STYE */
+
+
+
+
+
+
+
+
+
+
+
+
+/*Landscape Mobile*/
+@media screen and (min-width:  576px){
+	.buttons a{
+		padding: 12px 27px 12px 27px;
+	}
+	html{
+		font-size: 0.7rem;
+	}
+	.image img{
+		height: 70vh;
+	}
+	.introduction{
+		margin-bottom: 20px;
+	}
+}
+
+/*Tablets*/
+@media screen and (min-width:  767px){
+	.buttons a{
+		padding: 15px 30px 15px 30px;
+	}
+	html{
+		font-size: 1rem;
+	}
+	.introduction{
+		margin-bottom: 30px;
+	}
+}
+
+
+/*Laptop Desktop*/
+@media screen and (min-width:  992px){
+	.buttons a{
+		padding: 20px 35px 20px 35px;
+	}
+	html{
+		font-size: 1.05rem;
+	}
+	.introduction{
+		margin-bottom: 30px;
+	}
+}
+
