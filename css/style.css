@@ -26,6 +26,7 @@ main{
 }
 .nav-link{
 	color: white;
+	letter-spacing: 1px;
 }
 .nav-link:hover{
 	color: black;
